@@ -5,12 +5,6 @@ Parfait pour suivre l'état de tes serveurs communautaires en temps réel ! 🚀
 
 ---
 
-## 📸 Aperçu
-
-![aperçu](https://via.placeholder.com/800x300?text=Exemple+d%27embed+serveur+en+ligne)
-
----
-
 ## 🛠️ Fonctionnalités
 
 - 🔍 Ping automatique ou manuel des serveurs Garry's Mod
@@ -58,6 +52,7 @@ npm install
 node index.js
 ```
 ### Info. Structure du projet
+```
 discord-server-bot/
 ├── config.json           # Configuration du bot
 ├── index.js              # Fichier principal
@@ -67,3 +62,4 @@ discord-server-bot/
 └── fonction/
     ├── ping.js           # Fonction pour ping les serveurs
     └── renamer.js        # Fonction pour renommer les membres
+```
