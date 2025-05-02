@@ -28,7 +28,7 @@ cd discord-server-bot
 npm install
 ```
 ### 3. Configurer le bot
-```bash
+```json
 {
   "token": "TON_TOKEN_DISCORD",
   "guild_id": "TON_GUILD_ID",
