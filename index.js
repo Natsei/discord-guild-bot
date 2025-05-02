@@ -24,7 +24,7 @@ client.once('ready', () => {
 let relifeStatus = false;
 
 async function sendPingResult() {
-  const channel = await client.channels.fetch('1360241458338205862');
+  const channel = await client.channels.fetch('Ping server On channel');
   const { embed, relifeOnline, relifeAccessible } = await pingServersAndCreateEmbed();
   const messages = await channel.messages.fetch({ limit: 5 });
   const lastMessage = messages.find(msg => msg.embeds.length > 0);
@@ -36,9 +36,9 @@ async function sendPingResult() {
   }
 
   if (!relifeStatus && relifeOnline && relifeAccessible) {
-    const role = await channel.guild.roles.fetch('1360246035640750221');
+    const role = await channel.guild.roles.fetch('Role ping Status');
     if (role) {
-      await channel.send({ content: `${role.toString()} Le serveur **Relife** est maintenant en ligne ! 🎉` });
+      await channel.send({ content: `${role.toString()} Le serveur **[A changer]** est maintenant en ligne ! 🎉` });
     }
     relifeStatus = true;
   }
